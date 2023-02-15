@@ -2,3 +2,9 @@ h1 {
     font-size: 50px;
     color: blue;
 }
+p{
+    width: 50%;
+}
+table,td,th{
+  border:1px solid black;
+}
