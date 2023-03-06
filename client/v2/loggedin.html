@@ -1,0 +1,253 @@
+<!--
+<div>
+  <?php 
+    // Include config file
+    require_once "config.php";
+  ?>
+</div>
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
+    <title>Suny New Paltz Childern's Center</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="assets/css/fontawesome.css">
+    <link rel="stylesheet" href="assets/css/templatemo-seo-dream.css">
+    <link rel="stylesheet" href="assets/css/animated.css">
+    <link rel="stylesheet" href="assets/css/owl.css">
+
+</head>
+
+<body  >
+
+  <!-- ***** Preloader Start ***** -->
+  <div id="js-preloader" class="js-preloader">
+    <div class="preloader-inner">
+      <span class="dot"></span>
+      <div class="dots">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </div>
+  <!-- ***** Preloader End ***** -->
+
+  <!-- ***** Header Area Start ***** -->
+  <header class="header-area header-sticky wow slideInDown" data-wow-duration="0.75s" data-wow-delay="0s">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <nav class="main-nav">
+    <!--need to add php tp display child or username 
+    <div>  
+			<label id = "userDisplay">Logged in as: <br><?php echo $row['username']; ?></label>
+    </div>
+    -->
+            <!-- ***** Menu Start ***** -->
+            <ul class="nav">
+              <li class="scroll-to-section"><a href="#calendar" class="active">Calendar</a></li>
+              <li class="scroll-to-section"><a href="#Contact" class="active">Contact us</a></li> 
+              <li class="scroll-to-section"><a href="#acount" class="active">Acount</a></li>
+              <li class=""><a href="#sign out" class="active">Sign Out</a></li>
+
+              
+            </ul>        
+            <a class='menu-trigger'>
+                <span>Menu</span>
+            </a>
+            <!-- ***** Menu End ***** -->
+          </nav>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- ***** Header Area End ***** -->
+  <!--start of calendar-->
+  <div id="calendar" class="Calendar section">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="0.25s">
+          <form id="contact" action="" method="post">
+            <div class="row">
+              <div class="section-heading">
+                <h6>Calendar</h6>
+                <h2>Check out our <em>Calendar</em> and <span>Events</span></h2>
+                <body>
+                  <center>
+                      <iframe src="https://calendar.google.com/calendar/embed?src=eloonku%40gmail.com&ctz=America%2FNew_York" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+                  </center>
+              </body>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+   <!--end of calendar-->
+
+   <!--start of account info -->
+   <div id="acount" class="Acount section">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="0.25s">
+          <form id="contact" action="" method="post">
+            <div class="row">
+              <div class="col-lg-6 offset-lg-3">
+                <div class="section-heading">
+                    <br><br><br>
+                  <h3>Personal information</h3>
+                  <br>
+                <center>
+                  <table style="width:575px" > 
+                    <tr >
+                      <th>Child's Full  Name:   </th>
+                    </tr>
+                    <tr >
+                      <td>Birthday:   </td>
+                    </tr>
+                    <tr >
+                      <td>Gender:     </td>
+                    </tr>
+                    <tr>
+                      <td>Legal Guardian:     </td>
+                    </tr>
+                    <tr >
+                      <td>Email Address:    </td>
+                    </tr>
+                    <tr>
+                      <td>Phone Number:    </td>
+                    </tr>
+                    <tr>
+                      <td>Address:    </td>
+                    </tr>
+                    <tr >
+                      <td>Allergies:    </td>
+                    </tr>
+                  </table>
+                </center>
+                <div class="col-lg-12">
+                  <fieldset >
+                    <button type="submit" id="form-submit" class="main-button " >Add Child</button>
+                  </fieldset>
+                  <fieldset>
+                    <button type="submit" id="form-submit" class="main-button " >Update Information</button>
+                  </fieldset>
+
+                  <!-- **** connect to the registration php to add child to database -->
+                  <!-- **** add button to be able to change information from database -->
+
+                </div> 
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+   <!--end of account info -->
+
+   <!-- start of contact info-->
+  <div id="Contact" class="Contact-us section">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="0.25s">
+          <form id="contact" action="" method="post">
+            <div class="row">
+              <div class="col-lg-6 offset-lg-3">
+                <div class="section-heading">
+                  <h6>Contact Us:</h6>
+                  State University of New York at New Paltz
+                  <br>
+                  1 Hawk Drive
+                  <br>
+                  New Paltz, NY 12561
+                  <br>
+                  845-257-2910
+                  </B></p>
+                  <br>
+                  <h2>Have a question? Email <span>us</span>! <em></em> </h2>
+                </div>
+              </div>
+              <div class="col-lg-12">
+                <div class="row">
+                  <div class="col-lg-6">
+                    <fieldset>
+                      <input type="name" name="name" id="name" placeholder="Full Name" autocomplete="on" required>
+                    </fieldset>
+                  </div>
+                  <div class="col-lg-6">
+                    <fieldset>
+                      <input type="text" name="email" id="email" pattern="[^ @]*@[^ @]*" placeholder="Your Email" required="">
+                    </fieldset>
+                  </div>
+                  <div class="col-lg-12">
+                    <fieldset>
+                      <textarea name="message" type="text" class="form-control" id="message" placeholder="Message" required=""></textarea>  
+                    </fieldset>
+                  </div>
+                  <div class="col-lg-12">
+                    <fieldset>
+                      <button type="submit" id="form-submit" class="main-button ">Send Message Now</button>
+                    </fieldset>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+              <!-- end of contact info-->
+
+   <!-- Scripts -->
+   <script src="vendor/jquery/jquery.min.js"></script>
+   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+   <script src="assets/js/owl-carousel.js"></script>
+   <script src="assets/js/animation.js"></script>
+   <script src="assets/js/imagesloaded.js"></script>
+   <script src="assets/js/custom.js"></script>
+              
+</body>
+</html>
+<style>
+  table,th {
+  border: 0.1em solid black;
+}
+td{
+  
+  left: auto;
+  border: 0.1em solid black;
+}
+tr{
+  height: 49px;
+}
+button{
+  width: auto;
+  height: 55px;
+}
+body {
+  background-image: url("./assets/images/contact-bg.png");
+}
+.container{
+  width: auto;
+}
+</style>
