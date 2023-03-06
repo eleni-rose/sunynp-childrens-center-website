@@ -200,16 +200,16 @@ body {
 
 .section-heading h2 em {
   font-style: normal;
-  color: #33ccc5;
+  color: #ff8438;
 }
 
 .section-heading h2 span {
-  color: #088ec3;
+  color: #2149ff;
 }
 
 .main-blue-button a {
   display: inline-block;
-  background-color: #4771cb;
+  background-color: #2149ff;
   font-size: 15px;
   font-weight: 400;
   color: #fff;
@@ -217,14 +217,12 @@ body {
   padding: 12px 25px;
   border-radius: 23px;
   letter-spacing: 0.25px;
-  border-bottom: 2px solid #fff!important;
-  transition: all .3s;
+  transition: all .2s;
 }
 
 .main-blue-button a:hover {
   background-color: #fff!important;
   color: #4771cb!important;
-  border-bottom: 2px solid #4771cb!important;
 }
 
 .main-green-button a {
@@ -237,14 +235,12 @@ body {
   padding: 12px 25px;
   border-radius: 23px;
   letter-spacing: 0.25px;
-  border-bottom: 2px solid #4771cb!important;
   transition: all .3s;
 }
 
 .main-green-button a:hover {
   background-color: #4771cb!important;
   color: #fff!important;
-  border-bottom: 2px solid #33ccc5!important;
 }
 
 
@@ -1483,7 +1479,7 @@ contact
 .contact-us {
   margin-top: 90px;
   padding: 120px 0px;
-  background-image: url(../images/contact-bg.jpg);
+  background-image: url(../images/contact-bg.png);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
