@@ -4,34 +4,29 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css">
     <title>Contact Us</title>
 </head>
 <body>
 
-    <h1>Testing a form submission page!</h1>
+    <h1>Contact Us!</h1>
+    <form method ="post" action="send-email.php">
+        
+        <label for="name">Your name</label>
+        <input type="text" name="name" id="name">
 
-    <div class="contact">
-        <!-- <form action="insert.php" method="post"> -->
-        <form id="contact" action="inquiry.php" method="post">
-            <p>
-                <label for="firstName">First name:</label>
-                <input type="text" name="first_name" id="fname">
-            </p>
+        <label for="email">Subject</label>
+        <input type="text" name="subject" id="subject">
 
-            <p>
-                <label for="lastName">Last Name:</label>
-                <input type="text" name="last_name" id="lname">
-            </p>
+        <label for="email">Your email</label>
+        <input type="email" name="email" id="email">
+
+        <label for="message">Message us!</label>
+        <textarea name="message" id="message" required></textarea>
+
+        <br>
     
-            <p>
-                <label for="emailAddress">Email Address:</label>
-                <input type="text" name="emailAddress" id="email">
-            </p>
-            
-            <input type="submit" value="Submit">
-            </form>
-    </div>
-    
+        <button>Send message!</button>
+    </form>  
 </body>
 </html>
