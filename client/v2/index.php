@@ -452,29 +452,23 @@ https://templatemo.com/tm-563-seo-dream
   
   <!-- ***** Start of Calander ***** -->
 
-  <div id="calendar" class="calendar">
+
+  <div id="calendar" class="our-services section">
     <div class="container">
       <div class="row">
-        <div class="col-lg-12 wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="0.25s">
-          <form id="contact" action="" method="post">
-            <div class="row">
-              <div class="section-heading">
-                <h6>Calendar</h6>
-                <h2>Our <em>Calendar</em> and <span>Events</span></h2>
-                <body>
-                  <center>
-                      <iframe src="https://calendar.google.com/calendar/embed?src=eloonku%40gmail.com&ctz=America%2FNew_York" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
-                  </center>
-              </body>
-              </div>
+        <div class="col-lg-6 offset-lg-3">
+            <div class="section-heading wow bounceIn" data-wow-duration="1s" data-wow-delay="0.2s">
+              <h2>Our <em>Calendar</em> and <span>Events</span></h2>
+                <iframe src="https://calendar.google.com/calendar/embed?src=eloonku%40gmail.com&ctz=America%2FNew_York" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
             </div>
-          </form>
         </div>
       </div>
     </div>
   </div>
 
   <!-- ***** End of Calendar ***** -->
+
+  <!-- ***** Contact Form Starts ***** -->
 
   <div id="contact" class="contact-us section">
     <div class="container">
@@ -503,7 +497,7 @@ https://templatemo.com/tm-563-seo-dream
                   </div>
                   <div class="col-lg-6">
                     <fieldset>
-                      <input type="c_name" name="c_name" id="c_name" placeholder="Your child's name" autocomplete="on"
+                      <input type="text" name="child" id="child" placeholder="Your child's name" autocomplete="on"
                         required>
                     </fieldset>
                   </div>
@@ -559,6 +553,8 @@ https://templatemo.com/tm-563-seo-dream
       </div>
     </div>
   </div>
+
+    <!-- ***** Contact Form Ends ***** -->
 
   <!-- ***** Login in starts ***** -->
 
