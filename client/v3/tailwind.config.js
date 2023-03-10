@@ -3,7 +3,7 @@ module.exports = {
   content: ['./views/*.{html,php}'],
   theme: {
     fontFamily: {
-      'sans': ['Open\\ Sans', 'Helvetica', 'Arial', 'sans-serif']
+      'sans': ['Josefin\\ Sans', 'Helvetica', 'Arial', 'sans-serif']
     },
     screens: {
       sm: '480px',
