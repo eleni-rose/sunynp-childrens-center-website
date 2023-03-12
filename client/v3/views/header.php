@@ -97,6 +97,7 @@
                             bg-blue-700">
                     </span>
                 </a>
+
                 <a href="/more" class="my-1 group transition duration-500">
                     More
                     <span
