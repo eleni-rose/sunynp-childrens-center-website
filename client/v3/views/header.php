@@ -20,6 +20,7 @@
         <!--------------------- Navigation items start  --------------------->
 
             <div class="text-xl text-center hidden md:flex space-x-8">
+
                 <a href="/" class="my-1 group transition duration-500">
                     Home
                     <span
@@ -118,6 +119,7 @@
     </nav>
 
 <!--------------------- Navbar end  --------------------->
+
 
 <!--------------------- Banner carousel start  --------------------->
 
