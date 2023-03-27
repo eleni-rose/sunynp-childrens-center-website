@@ -6,11 +6,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <link href="https://fonts.googleapis.com/css2?family=Odibee+Sans&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../css/main.css">
 </head>
 
-<!--------------------- Banner carousel start  --------------------->
 <body>
+
+<?php include('header.php'); ?>
+
+<!--------------------- Banner carousel start  --------------------->
 
 <section id="banner-carousel">
         <div class="w-full bg-cover bg-center" style="height:38rem; background-image: url('../img/banner4.jpg');">
@@ -39,41 +42,17 @@
 <!--------------------- Information section start --------------------->
 
     <section id="information">
-        <div class="flex flex-row p-10 m-10">
+        
 
         <!--------------------- Information items start --------------------->
 
-            <div>
-                <h1 class="text-4xl text-center bg-slate-300 m-5 p-5">Our Promise<h1>
-
-                <h2 class="text-2xl text-center m-5 p-5">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Totam expedita, suscipit cumque natus distinctio magni eligendi amet?
-                    Quis sit consequatur veritatis rem. Nemo aspernatur beatae non dicta magni natus saepe?</h2>
-            </div>
-
-            <div>
-                <h1 class="text-4xl text-center bg-slate-200 m-5 p-5">Our Promise<h1>
-
-                <h2 class="text-2xl text-center m-5 p-5">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Totam expedita, suscipit cumque natus distinctio magni eligendi amet?
-                    Quis sit consequatur veritatis rem. Nemo aspernatur beatae non dicta magni natus saepe?</h2>
-            </div>
-
-            <div>
-                <h1 class="text-4xl text-center bg-slate-300 m-5 p-5">Our Promise<h1>
-
-                <h2 class="text-2xl text-center m-5 p-5">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Totam expedita, suscipit cumque natus distinctio magni eligendi amet?
-                    Quis sit consequatur veritatis rem. Nemo aspernatur beatae non dicta magni natus saepe?</h2>
-            </div>
+            
 
         <!--------------------- Information items end --------------------->
 
-        </div>
     </section>
 
 <!--------------------- Information section end --------------------->
-
 <!--
   <h1>Pure <span id="css">Css</span> Carousel</h1>
   <div class="carousel-wrapper">
@@ -98,5 +77,7 @@
   </div>
 
 -->
+<?php include('footer.php'); ?>
+
 </body>
 </html>
