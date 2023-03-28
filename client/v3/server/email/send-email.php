@@ -29,13 +29,13 @@ try {
     $mail->Host = "smtp.gmail.com";
     $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
     $mail->Port = 587;
-    $mail->Username = "hothotspicy69@gmail.com";
-    $mail->Password = "flnnkqrwhlgietbv";
+    $mail->Username = "newpaltzccsmtp@gmail.com";
+    $mail->Password = "cvhczhyvnjvvjhsz";
 
     // SMTP recipients
     $mail->setFrom('contact@example.net', $name);
     $mail->addReplyTo($email, $name);
-    $mail->addAddress("eloonku@gmail.com", 'Eleni');
+    $mail->addAddress("newpaltzccsmtp@gmail.com");
 
     // Email content
     $mail->Subject = $subject;
@@ -46,7 +46,7 @@ try {
         die("Links are not allowed in the message box!");
     } else {
         $mail->send();
-        header("Location: ../../views/sent-message.php");
+        header("Location: ../../views/contact-success.html");
     }
 
 } catch (Exception $e) {
