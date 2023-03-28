@@ -1,3 +1,38 @@
+<?php
+
+$is_invalid = false;
+
+if ($_SERVER["REQUEST_METHOD"] === "POST") {
+    $mysqli = require __DIR__ . '/config.php';
+
+    $sql = sprintf("SELECT * FROM Admin
+            WHERE email = '%s'",
+            $mysqli->real_escape_string($_POST["email"]));
+
+    $result = $mysqli->query($sql);
+
+    $admin = $result->fetch_assoc();
+
+    if ($admin) {
+        if (password_verify($_POST["password"], $admin["password_hash"])) {
+
+            session_start();
+
+            session_regenerate_id();
+
+            $_SESSION["admin_id"] = $admin["id"];
+
+            header("Location: dashboard.php");
+            exit;
+
+        }
+    }
+
+    $is_invalid = true;
+}
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -6,18 +41,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
-    <link rel="stylesheet" href="../css/main.css">
-    <title>Sign up</title>
+    <link rel="stylesheet" href="../../css/main.css">
+    <title>Sign in</title>
 </head>
 
 <body class="bg-slate-900">
     <div class="h-screen flex flex-col items-center justify-center">
 
-        <h1 class="text-3xl my-5 py-2 text-orange-300">Sign in</h1>
+        <h1 class="text-4xl text-sky-300">Sign In</h1>
+        <h2 class="text-xl my-2 text-slate-300">Login to admin dashboard</h2>
 
         <!--------------------- Form start  --------------------->
 
-        <form action="../server/account/create-account.php" method="post" novalidate class="w-full max-w-lg">
+        <form method="post" class="w-full max-w-lg">
 
             <!--------------------- Email start --------------------->
 
@@ -34,6 +70,7 @@
                         id="grid-email"
                         name="email"
                         type="email"
+                        value="<?= htmlspecialchars($_POST["email"] ?? "") ?>"
                         placeholder="example@email.com">
 
                 </div>
@@ -55,7 +92,7 @@
                     </label>
 
                     <input
-                        class="appearance-none block w-full bg-slate-800 text-white border border-slate-800 rounded py-3 px-4 mb-3 leading-tight focus:bg-slate-600 focus:outline-none focus:placeholder:opacity-0"
+                        class="appearance-none block w-full bg-slate-800 text-white border border-slate-800 rounded py-3 px-4 leading-tight focus:bg-slate-600 focus:outline-none focus:placeholder:opacity-0"
                         id="grid-password"
                         name="password"
                         type="password"
@@ -67,17 +104,25 @@
 
             <!--------------------- Password end  --------------------->
 
+            <?php if ($is_invalid): ?>
+                <p class="text-red-500 text-xl text-center">Invalid credentials. Please try again.</p>
+            <?php endif; ?>
+
             <!--------------------- Submit button start --------------------->
 
-            <button
-                class="text-orange-300 p-2 m-2 w-1/2 item-center bg-transparent border-2 border-orange-300 rounded-full transition ease-in-out hover:scale-110 hover:bg-orange-300 hover:text-white active:bg-orange-200">
-                Sign in!</button>
+            <div class="flex flex-col items-center justify-center">
+                <button
+                    class="text-sky-400 text-lg py-1.5 mt-3 w-1/2 bg-transparent border-2 border-sky-300 rounded-full transition ease-in-out hover:scale-110 hover:bg-sky-400 hover:text-white active:bg-sky-300">
+                    Submit</button>
+            </div>
 
             <!--------------------- Submit button end --------------------->
 
         </form>
 
         <!--------------------- Form end  --------------------->
+
+        <p class="text-slate-400 text-lg my-2 py-2">Don't have an account? <a href="signup.html" class="text-blue-400 hover:text-blue-500 hover:underline">Create one today.</a></p>
 
     </div>
 </body>

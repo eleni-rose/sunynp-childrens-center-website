@@ -6,18 +6,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
-    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../../css/main.css">
     <title>Sign up</title>
 </head>
 
 <body class="bg-slate-900">
     <div class="h-screen flex flex-col items-center justify-center">
 
-        <h1 class="text-3xl my-5 py-2 text-orange-300">Create an account</h1>
+        <h1 class="text-4xl mb-3 text-sky-300">Sign Up</h1>
+        <h2 class="text-xl mb-6 text-slate-300">Create new admin user account</h2>
 
         <!--------------------- Form start  --------------------->
 
-        <form action="../server/account/create-account.php" method="post" novalidate class="w-full max-w-lg">
+        <form action="../../server/account/create-account.php" method="post" novalidate class="w-full max-w-lg">
 
             <!--------------------- First and last name start  --------------------->
 
@@ -123,9 +124,11 @@
 
             <!--------------------- Submit button start --------------------->
 
-            <button
-                class="text-orange-300 p-2 m-2 w-1/2 item-center bg-transparent border-2 border-orange-300 rounded-full transition ease-in-out hover:scale-110 hover:bg-orange-300 hover:text-white active:bg-orange-200">
-                Create account!</button>
+            <div class="flex flex-col items-center justify-center">
+                <button
+                    class="text-sky-400 text-lg py-1.5 my-1 w-1/2 bg-transparent border-2 border-sky-300 rounded-full transition ease-in-out hover:scale-110 hover:bg-sky-400 hover:text-white active:bg-sky-300">
+                    Submit</button>
+            </div>
 
             <!--------------------- Submit button end --------------------->
 
@@ -146,7 +149,7 @@
             r_password = Repeat password
         -->
 
-        <p class="text-gray-500 text-xs my-2 py-2">Already have an account? Sign in!</p>
+        <p class="text-slate-400 text-lg my-2 py-2">Already have an account? <a href="login.php" class="text-blue-400 hover:text-blue-500 hover:underline">Sign in.</a></p>
 
     </div>
 </body>

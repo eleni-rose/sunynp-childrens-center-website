@@ -86,7 +86,7 @@
                     </span>
                 </a>
 
-                <a href="/contact" class="my-1 group transition duration-500">
+                <a href="contact.php" class="my-1 group transition duration-500">
                     Contact Us
                     <span
                         class="
@@ -99,8 +99,8 @@
                     </span>
                 </a>
 
-                <a href="/more" class="my-1 group transition duration-500">
-                    More
+                <a href="admin/login.php" class="my-1 group transition duration-500">
+                    Admin
                     <span
                         class="
                             block max-w-0
