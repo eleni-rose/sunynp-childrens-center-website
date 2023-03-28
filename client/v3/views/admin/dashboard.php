@@ -26,14 +26,14 @@ if (isset($_SESSION["admin_id"])) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <link rel="stylesheet" href="../../css/main.css">
-    <title>SUNY New Paltz Children's Center</title>
+    <title>NPCC Admin Dashboard</title>
 </head>
 
 <body class="bg-slate-900">
 
     <div class="h-screen flex flex-col items-center justify-center">
 
-        <h1 class="text-slate-200 text-5xl my-3">
+        <h1 class="text-sky-100 text-5xl my-3">
             Admin Dashboard
         </h1>
 
@@ -46,7 +46,7 @@ if (isset($_SESSION["admin_id"])) {
 
             <form method ="post" action="..\server\admin\upload-photo.php">
 
-                <input aria-label="Upload a photo" type="file" class="text-slate-500 my-5"/>
+                <input aria-label="Upload a photo" type="file" class="text-slate-400 my-5"/>
 
                 <button
                     class="text-sky-300 text-2xl p-2 m-2 w-full item-center bg-transparent border-2 border-sky-300 rounded-full transition ease-in-out hover:scale-110 hover:bg-sky-300 hover:text-white active:bg-sky-200">

@@ -20,8 +20,8 @@
             <div class="flex flex-col md:flex-row justify-between">
                 <div class="flex flex-col space-y-4">
                     <h3 class="text-xl font-bold">Contact Us</h3>
-                    <p class="text-gray-500">Phone: (845) 257-3000</p>
-                    <p class="text-gray-500">Address: 1 Hawk Drive, New Paltz, NY 12561</p>
+                    <p class="text-slate-400">Phone: (845) 257-3000</p>
+                    <p class="text-slate-400">Address: 1 Hawk Drive, New Paltz, NY 12561</p>
                 </div>
             </div>
             

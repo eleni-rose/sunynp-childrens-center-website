@@ -48,8 +48,8 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 <body class="bg-slate-900">
     <div class="h-screen flex flex-col items-center justify-center">
 
-        <h1 class="text-4xl text-sky-300">Sign In</h1>
-        <h2 class="text-xl my-2 text-slate-300">Login to admin dashboard</h2>
+    <h1 class="text-4xl mb-3 text-sky-100">Sign In</h1>
+        <h2 class="text-xl mb-6 text-sky-100">Log in to admin dashboard</h2>
 
         <!--------------------- Form start  --------------------->
 
@@ -105,15 +105,16 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
             <!--------------------- Password end  --------------------->
 
             <?php if ($is_invalid): ?>
-                <p class="text-red-500 text-xl text-center">Invalid credentials. Please try again.</p>
+                <p class="my-3 text-red-300 text-xl text-center">Invalid credentials. Please try again.</p>
             <?php endif; ?>
 
             <!--------------------- Submit button start --------------------->
 
             <div class="flex flex-col items-center justify-center">
                 <button
-                    class="text-sky-400 text-lg py-1.5 mt-3 w-1/2 bg-transparent border-2 border-sky-300 rounded-full transition ease-in-out hover:scale-110 hover:bg-sky-400 hover:text-white active:bg-sky-300">
-                    Submit</button>
+                    class="text-sky-400 text-lg py-1.5 my-3 w-1/2 bg-transparent border-2 border-sky-300 rounded-full transition ease-in-out hover:scale-110 hover:bg-sky-400 hover:text-white active:bg-sky-300">
+                    Log in
+                </button>
             </div>
 
             <!--------------------- Submit button end --------------------->
@@ -122,7 +123,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 
         <!--------------------- Form end  --------------------->
 
-        <p class="text-slate-400 text-lg my-2 py-2">Don't have an account? <a href="signup.html" class="text-blue-400 hover:text-blue-500 hover:underline">Create one today.</a></p>
+        <p class="my-3 text-slate-400 text-md">Don't have an account? <a href="signup.html" class="text-blue-500 hover:text-blue-600 hover:underline">Create one today.</a></p>
 
     </div>
 </body>
