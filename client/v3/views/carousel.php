@@ -16,10 +16,7 @@ body{
     transform: translate(-50%,-50%);
     top: 50%;
     left: 50%;
-    overflow: hidden;
-    border: 20px solid #ffffff;
-    border-radius: 8px;
-    box-shadow: 10px 25px 30px rgba(30,30,200,0.3);
+    overflow: hidden;;
 }
 .wrapper{
     width: 100%;
