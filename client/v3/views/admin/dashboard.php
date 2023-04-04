@@ -43,17 +43,25 @@ if (isset($_SESSION["admin_id"])) {
                 Welcome back, <?= $admin["f_name"]?>
             </h2>
 
+            <form method ="post" action="..\server\admin\banner-upload.php">
 
-            <form method ="post" action="..\server\admin\upload-photo.php">
+                <label for="banner-img">Image file</label>
+                <input aria-label="Upload a photo" id="banner-img" name="banner-img" type="file" class="text-slate-400 my-5"/>
 
-                <input aria-label="Upload a photo" type="file" class="text-slate-400 my-5"/>
+                <div class="flex flex-col items-center justify-center">
+                    <button
+                        class="text-sky-400 text-lg py-1.5 my-3 w-full bg-transparent border-2 border-sky-300 rounded-full transition ease-in-out hover:scale-110 hover:bg-sky-400 hover:text-white active:bg-sky-300">
+                        Upload
+                    </button>
+                </div>
 
-                <button
-                    class="text-sky-300 text-2xl p-2 m-2 w-full item-center bg-transparent border-2 border-sky-300 rounded-full transition ease-in-out hover:scale-110 hover:bg-sky-300 hover:text-white active:bg-sky-200">
-                    Submit</button>
             </form>
 
-            <p class="text-blue-400"><a href="logout.php">Log out</a></p>
+            <p class="my-3 text-slate-400 text-md">
+                <a href="logout.php" class="text-blue-500 hover:underline hover:text-blue-600">
+                    Logout
+                </a>
+            </p>
 
         <?php else: ?>
 
@@ -62,7 +70,6 @@ if (isset($_SESSION["admin_id"])) {
             </h2>
 
         <?php endif; ?>
-
             
     </div>
 

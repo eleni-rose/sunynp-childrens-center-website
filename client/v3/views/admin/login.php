@@ -123,7 +123,12 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 
         <!--------------------- Form end  --------------------->
 
-        <p class="my-3 text-slate-400 text-md">Don't have an account? <a href="signup.html" class="text-blue-500 hover:text-blue-600 hover:underline">Create one today.</a></p>
+    <p class="my-3 text-slate-400 text-md">
+        Don't have an account?
+      <a href="index.php" class="text-blue-500 hover:underline hover:text-blue-600">
+        Create one today!
+      </a>
+    </p>
 
     </div>
 </body>
