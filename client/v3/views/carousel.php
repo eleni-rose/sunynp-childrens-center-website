@@ -2,7 +2,11 @@
   <head>
     
     <style>
+<<<<<<< Updated upstream
      *{
+=======
+   *{
+>>>>>>> Stashed changes
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -16,7 +20,12 @@ body{
     transform: translate(-50%,-50%);
     top: 50%;
     left: 50%;
+<<<<<<< Updated upstream
     overflow: hidden;;
+=======
+    overflow: hidden;
+   
+>>>>>>> Stashed changes
 }
 .wrapper{
     width: 100%;
@@ -56,6 +65,7 @@ img{
     </style>
   </head>
 
+<<<<<<< Updated upstream
   <body> 
   <div class="container">
         <div class="wrapper">
@@ -67,5 +77,19 @@ img{
 
         </div>
     </div>
+=======
+<body>
+    <div class="container">
+        <div class="wrapper">
+          <img src="../img/banner.jpg">
+          <img src="../img/banner2.jpg">
+          <img src="../img/banner3.jpg">
+          <img src="../img/banner4.jpg">
+          <img src="../img/banner5.jpg">
+        </div>
+    </div>
+</body>
+</html>
+>>>>>>> Stashed changes
   </body>
 </html>
