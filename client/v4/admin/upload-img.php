@@ -34,7 +34,7 @@ if (isset($_SESSION["admin_id"])) {
     <div class="h-screen flex flex-col items-center justify-center">
 
         <h1 class="text-sky-100 text-5xl my-3">
-            Admin Dashboard
+            Upload Photo
         </h1>
 
         <?php if (isset($_SESSION["admin_id"])): ?>
@@ -43,7 +43,7 @@ if (isset($_SESSION["admin_id"])) {
                 Welcome back, <?= $admin["f_name"]?>
             </h2>
 
-            <form method ="post" action="banner-upload.php">
+            <form method ="post" action="process-upload.php">
 
                 <label for="image">Image file</label>
 

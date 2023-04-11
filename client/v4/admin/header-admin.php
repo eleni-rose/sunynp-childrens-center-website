@@ -21,8 +21,8 @@
 
             <div class="text-xl text-center hidden md:flex space-x-8">
 
-                <a href="index-admin.php" class="my-1 group transition duration-500">
-                    ADMIN DASHBOARD:
+                <a href="text-change.php" class="my-1 group transition duration-500">
+                    Change Text
                     <span
                         class="
                             block max-w-0
@@ -34,7 +34,7 @@
                     </span>
                 </a>
 
-                <a href="upload-form.php" class="my-1 group transition duration-500">
+                <a href="upload-img.php" class="my-1 group transition duration-500">
                     Upload Files
                     <span
                         class="

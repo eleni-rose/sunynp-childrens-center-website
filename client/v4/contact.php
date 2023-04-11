@@ -15,7 +15,7 @@
 
     <h1 class="text-sky-100 text-5xl my-5 py-5">Contact Us!</h1>
 
-    <form method="post" action="..\server\email\send-email.php" class="w-full max-w-lg">
+    <form method="post" action="email/process-email.php" class="w-full max-w-lg">
 
       <div class="flex flex-wrap -mx-3 mb-4">
 

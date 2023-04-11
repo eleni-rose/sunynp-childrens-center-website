@@ -46,7 +46,7 @@ try {
         die("Links are not allowed in the message box!");
     } else {
         $mail->send();
-        header("Location: ../../views/contact-success.php");
+        header("Location: ../contact-success.php");
     }
 
 } catch (Exception $e) {
