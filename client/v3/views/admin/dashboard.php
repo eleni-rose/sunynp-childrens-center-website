@@ -46,7 +46,12 @@ if (isset($_SESSION["admin_id"])) {
             <form method ="post" action="..\server\admin\banner-upload.php">
 
                 <label for="banner-img">Image file</label>
-                <input aria-label="Upload a photo" id="banner-img" name="banner-img" type="file" class="text-slate-400 my-5"/>
+
+                <input aria-label="Upload a photo"
+                        id="banner-img"
+                        name="banner-img"
+                        type="file"
+                        class="text-slate-400 my-5"/>
 
                 <div class="flex flex-col items-center justify-center">
                     <button
