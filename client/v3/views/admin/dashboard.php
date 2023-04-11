@@ -43,13 +43,13 @@ if (isset($_SESSION["admin_id"])) {
                 Welcome back, <?= $admin["f_name"]?>
             </h2>
 
-            <form method ="post" action="..\server\admin\banner-upload.php">
+            <form method ="post" action="../../server/admin/banner-upload.php">
 
-                <label for="banner-img">Image file</label>
+                <label for="image">Image file</label>
 
                 <input aria-label="Upload a photo"
-                        id="banner-img"
-                        name="banner-img"
+                        id="image"
+                        name="image"
                         type="file"
                         class="text-slate-400 my-5"/>
 
