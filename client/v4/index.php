@@ -1,3 +1,16 @@
+<?php
+
+$mysqli = require_once('config.php');
+
+$sql = 'SELECT content FROM text';
+
+$result = $mysqli->query($sql);
+
+$text = $result->fetch_assoc();
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -25,7 +38,7 @@
                 <div class="text-center">
 
                     <h1 class="text-white text-5xl font-bold uppercase">
-                        Welcome to the <span class="text-orange-400">SUNY New Paltz</span> children's center!
+                      <?= $text["content"]?>
                     </h1>
 
                     <h2 class="text-white text-4xl">
