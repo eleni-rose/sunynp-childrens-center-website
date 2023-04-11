@@ -1,0 +1,24 @@
+{
+  "name": "suny_np_childrens_center",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "tailwindcss -i ./css/input.css -o ./css/main.css",
+    "watch": "tailwindcss -i ./css/input.css -o ./css/main.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kelpoh/SUNY_NP_Childrens_Center.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kelpoh/SUNY_NP_Childrens_Center/issues"
+  },
+  "homepage": "https://github.com/kelpoh/SUNY_NP_Childrens_Center#readme",
+  "devDependencies": {
+    "tailwindcss": "^3.2.7"
+  }
+}

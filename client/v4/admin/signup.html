@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <link rel="stylesheet" href="../css/main.css">
+    <title>Sign up</title>
+</head>
+
+<body class="bg-slate-900">
+    <div class="h-screen flex flex-col items-center justify-center">
+
+        <h1 class="text-4xl mb-3 text-sky-100">Sign Up</h1>
+        <h2 class="text-xl mb-6 text-sky-100">Create new admin user account</h2>
+
+        <!--------------------- Form start  --------------------->
+
+        <form action="create-account.php" method="post" class="w-full max-w-lg" id="signup" novalidate>
+
+            <!--------------------- First and last name start  --------------------->
+
+            <div class="flex flex-wrap -mx-3 mb-4">
+
+                <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0 transition ease-in-out hover:scale-110">
+
+                    <label class="block uppercase tracking-wide text-blue-300 text-xs font-bold mb-2"
+                        for="grid-first-name">
+                        First Name
+                    </label>
+
+                    <input
+                        class="appearance-none block w-full bg-slate-800 text-white rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-slate-600 focus:placeholder:opacity-0"
+                        id="grid-first-name"
+                        name="f_name"
+                        type="text"
+                        placeholder="Jane">
+                </div>
+
+                <div class="w-full md:w-1/2 px-3 transition ease-in-out hover:scale-110">
+
+                    <label class="block uppercase tracking-wide text-green-300 text-xs font-bold mb-2"
+                        for="grid-last-name">
+                        Last Name
+                    </label>
+
+                    <input
+                        class="appearance-none block w-full bg-slate-800 text-white border border-slate-800 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-slate-600 focus:placeholder:opacity-0"
+                        id="grid-last-name"
+                        name="l_name"
+                        type="text"
+                        placeholder="Doe">
+                </div>
+
+            </div>
+
+            <!--------------------- First and last name end  --------------------->
+
+            <!--------------------- Email start --------------------->
+
+            <div class="flex flex-wrap -mx-3 mb-4">
+
+                <div class="w-full px-3 transition ease-in-out hover:scale-110">
+
+                    <label class="block uppercase tracking-wide text-red-300 text-xs font-bold mb-2" for="grid-email">
+                        Email
+                    </label>
+
+                    <input
+                        class="appearance-none block w-full bg-slate-800 text-white border border-slate-800 rounded py-3 px-4 mb-3 leading-tight focus:bg-slate-600 focus:outline-none focus:placeholder:opacity-0"
+                        id="grid-email"
+                        name="email"
+                        type="email"
+                        placeholder="example@email.com">
+
+                </div>
+
+
+            </div>
+
+            <!--------------------- Email end --------------------->
+
+            <!--------------------- Password start  --------------------->
+
+            <div class="flex flex-wrap -mx-3 mb-4">
+
+                <div class="w-full md:w-1/2 px-3 transition ease-in-out hover:scale-110">
+
+                    <label class="block uppercase tracking-wide text-yellow-200 text-xs font-bold mb-2"
+                        for="grid-password">
+                        Password
+                    </label>
+
+                    <input
+                        class="appearance-none block w-full bg-slate-800 text-white border border-slate-800 rounded py-3 px-4 mb-3 leading-tight focus:bg-slate-600 focus:outline-none focus:placeholder:opacity-0"
+                        id="grid-password"
+                        name="password"
+                        type="password"
+                        placeholder="***********">
+
+                </div>
+
+                <div class="w-full md:w-1/2 px-3 transition ease-in-out hover:scale-110">
+
+                    <label class="block uppercase tracking-wide text-blue-300 text-xs font-bold mb-2"
+                        for="grid-repeat-password">
+                        Repeat Password
+                    </label>
+
+                    <input
+                        class="appearance-none block w-full bg-slate-800 text-white border border-slate-800 rounded py-3 px-4 mb-3 leading-tight focus:bg-slate-600 focus:outline-none focus:placeholder:opacity-0"
+                        id="grid-repeat-password" 
+                        name="r_password"
+                        type="password" 
+                        placeholder="***********">
+
+                </div>
+
+            </div>
+
+            <!--------------------- Password end  --------------------->
+
+            <!--------------------- Submit button start --------------------->
+
+            <div class="flex flex-col items-center justify-center">
+                <button
+                    class="text-sky-400 text-lg py-1.5 my-3 w-1/2 bg-transparent border-2 border-sky-300 rounded-full transition ease-in-out hover:scale-110 hover:bg-sky-400 hover:text-white active:bg-sky-300">
+                    Submit</button>
+            </div>
+
+            <!--------------------- Submit button end --------------------->
+
+        </form>
+
+        <!--------------------- Form end  --------------------->
+
+        <!-- 
+            Note that database variables are taken from the "name"
+            attribute in each form element's input. For easy reference
+            I've provided each variable's current name below, please
+            remember to change this comment if the name attribute changes.
+
+            f_name = First name
+            l_name = Last name
+            email = Email
+            password = Password
+            r_password = Repeat password
+        -->
+
+        <p class="text-slate-400 text-lg my-2 py-3">Already have an account? <a href="login.php" class="text-blue-500 hover:text-blue-600 hover:underline">Sign in.</a></p>
+
+    </div>
+</body>
+</html>
