@@ -2,137 +2,70 @@
   <head>
     
     <style>
-      .carousel {
-  overflow: hidden;
-  max-width: 600px;
-  position: relative;
+     *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
-
-.carousel .carousel__item,
-.carousel .carousel__item--hidden {
-  display: none;
+body{
+    background-color: #ffffff;
 }
-
-.carousel .carousel__item img {
-  width: 100%;
-  max-width: 600px;
-  height: auto;
+.container{
+    width: 85vmin;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    overflow: hidden;;
 }
-
-.carousel .carousel__item--visible {
-  display: block;
-  animation: fadeVisibility 0.5s;
+.wrapper{
+    width: 100%;
+    display: flex;
+    animation: slide 16s infinite;
 }
-
-.carousel .carousel__actions {
-  display: flex;
-  width: 100%;
-  justify-content: space-between;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
+@keyframes slide{
+    0%{
+        transform: translateX(0);
+    }
+    25%{
+        transform: translateX(0);
+    }
+    30%{
+        transform: translateX(-100%);
+    }
+    50%{
+        transform: translateX(-100%);
+    }
+    55%{
+        transform: translateX(-200%);
+    }
+    75%{
+        transform: translateX(-200%);
+    }
+    80%{
+        transform: translateX(-300%);
+    }
+    100%{
+        transform: translateX(-300%);
+    }
 }
-
-.carousel .carousel__actions button {
-  border-radius: 50px;
-  border: 0;
-  font-weight: bold;
-  cursor: pointer;
-  width: 40px;
-  height: 40px;
-}
-
-.carousel .carousel__actions button#carousel__button--prev {
-  margin-left: 20px;
-}
-
-.carousel .carousel__actions button#carousel__button--next {
-  margin-right: 20px;
-}
-
-@keyframes fadeVisibility {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-    transform: opacity linear;
-  }
+img{
+    width: 100%;
 }
 
     </style>
   </head>
 
   <body> 
-    <!-- this is the html for the carousel -->
-    <div class="carousel">
-      <div class="carousel__item carousel__item--visible">
-        <img src="../img/banner.jpg">
-      </div>
-      <div class="carousel__item">
-        <img src="../img/banner2.jpg">
-      </div>
-      <div class="carousel__item">
-        <img src="../img/banner3.jpg">
-      </div>
-      <div class="carousel__item">
-        <img src="../img/banner4.jpg">
-      </div>
-      <div class="carousel__item">
-        <img src="../img/banner5.jpg">
-      </div>
+  <div class="container">
+        <div class="wrapper">
+            <img src="../img/banner.jpg">
+            <img src="../img/banner2.jpg">
+            <img src="../img/banner3.jpg">
+            <img src="../img/banner4.jpg">
+            <img src="../img/banner5.jpg">
 
-      <div class="carousel__actions">
-        <button id="carousel__button--prev" aria-label="Previous slide"></button>
-        <button id="carousel__button--next" aria-label="Next slide">></button>
-      </div>
+        </div>
     </div>
-
-    <script>
-      let slidePosition = 0;
-       const slides = document.getElementsByClassName('carousel__item');
-       const totalSlides = slides.length;
-// these two .documents create the functionality of the buttons going to the next and previous slide
-document.
-  getElementById('carousel__button--next')
-  .addEventListener("click", function() {
-    moveToNextSlide();
-  });
-document.
-  getElementById('carousel__button--prev')
-  .addEventListener("click", function() {
-    moveToPrevSlide();
-  });
-// this function updates the slide position and removes the hidden class from the slide and adds the visible class
-function updateSlidePosition() {
-  for (let slide of slides) {
-    slide.classList.remove('carousel__item--visible');
-    slide.classList.add('carousel__item--hidden');
-  }
-
-  slides[slidePosition].classList.add('carousel__item--visible');
-}
-// this function moves to the next slide and updates the slide position
-function moveToNextSlide() {
-  if (slidePosition === totalSlides - 1) {
-    slidePosition = 0;
-  } else {
-    slidePosition++;
-  }
-
-  updateSlidePosition();
-}
-// this function moves to the previous slide and updates the slide position
-function moveToPrevSlide() {
-  if (slidePosition === 0) {
-    slidePosition = totalSlides - 1;
-  } else {
-    slidePosition--;
-  }
-
-  updateSlidePosition();
-}
-
-    </script>
   </body>
 </html>
