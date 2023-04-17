@@ -34,7 +34,7 @@
                     </span>
                 </a>
 
-                <a href="Calendar.html" class="my-1 group transition duration-500">
+                <a href="calendar.php" class="my-1 group transition duration-500">
                     Calendar
                     <span
                         class="
@@ -47,7 +47,7 @@
                     </span>
                 </a>
 
-                <a href="/our-team" class="my-1 group transition duration-500">
+                <a href="our-team.php" class="my-1 group transition duration-500">
                     Our Teachers
                     <span
                         class="
@@ -60,7 +60,7 @@
                     </span>
                 </a>
 
-                <a href="/gallery" class="my-1 group transition duration-500">
+                <a href="gallery.php" class="my-1 group transition duration-500">
                     Gallery
                     <span
                         class="
@@ -73,7 +73,7 @@
                     </span>
                 </a>
 
-                <a href="/testimonials" class="my-1 group transition duration-500">
+                <a href="testimonials.php" class="my-1 group transition duration-500">
                     Testimonials
                     <span
                         class="
