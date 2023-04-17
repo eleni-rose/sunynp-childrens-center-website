@@ -21,6 +21,7 @@
 
             <!--------------------- Banner text and items start  --------------------->
                 <div class="text-center">
+                  <iframe scr="carousel.php" width="100%" height="100%" frameborder="0" scrolling="yes"></iframe>
 
                     <h1 class="text-white text-5xl font-bold uppercase">
                         Welcome to the <span class="text-orange-400">SUNY New Paltz</span> children's center!
