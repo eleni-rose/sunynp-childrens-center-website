@@ -31,7 +31,7 @@ body{
     </style>
 </head>
 <body>
-    <div id="Calendar" class="Calendar">
+    <div id="calendar" class="Calendar">
     <div class="container">
       <div class="row">
         <div class="col-lg-12 wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="0.25s">
