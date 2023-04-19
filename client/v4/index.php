@@ -42,7 +42,7 @@ $text = $result->fetch_assoc();
                     </h1>
 
                     <h2 class="text-white text-4xl">
-                        Dedicated to serving the New Paltz community since 19xx
+                        <?=$text["content"] ?>
                     </h2>
 
                 </div>

@@ -47,7 +47,7 @@
                     </span>
                 </a>
 
-                <a href="our-team.php" class="my-1 group transition duration-500">
+                <a href="our-staff.php" class="my-1 group transition duration-500">
                     Our Teachers
                     <span
                         class="
@@ -73,8 +73,8 @@
                     </span>
                 </a>
 
-                <a href="testimonials.php" class="my-1 group transition duration-500">
-                    Testimonials
+                <a href="handbook.php" class="my-1 group transition duration-500">
+                    Handbook
                     <span
                         class="
                             block max-w-0
