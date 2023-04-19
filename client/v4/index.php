@@ -28,6 +28,7 @@ $text = $result->fetch_assoc();
     <?php include('header.php'); ?>
 
     <!--------------------- Banner carousel start  --------------------->
+    
 
     <section id="banner-carousel">
         <div class="w-full bg-cover bg-center" style="height:38rem; background-image: url('img/banner4.jpg');">
