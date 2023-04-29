@@ -39,11 +39,11 @@ $text = $result->fetch_assoc();
             <!-- Text Items -->
                 <div class="absolute top-0 left-0 z-50 flex items-center justify-center h-full w-full">
                     <div class="text-center">
-                        <h1 class="mb-3 text-white text-4xl font-['Arial'] sm:text-3xl font-extrabold uppercase drop-shadow-md">
+                        <h1 class="mb-3 text-white text-4xl font-['Arial'] sm:text-4xl font-extrabold uppercase drop-shadow-md">
                             Welcome to the <span class="text-orange-400">SUNY New Paltz</span> Children's Center!
                         </h1>
 
-                        <h2 class="text-white text-3xl sm:text-2xl">
+                        <h2 class="text-white text-2xl sm:text-3xl drop-shadow-md">
                             Serving SUNY New Paltz and the New Paltz community
                         </h2>
                     </div>
@@ -51,7 +51,7 @@ $text = $result->fetch_assoc();
 
                 <!-- Item 1 -->
                 <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                    <img src="img/6.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                    <img src="img/4.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
                 </div>
 
                 <!-- Item 2 -->
@@ -61,17 +61,17 @@ $text = $result->fetch_assoc();
 
                 <!-- Item 3 -->
                 <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                    <img src="img/2.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                    <img src="img/3.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
                 </div>
 
                 <!-- Item 4 -->
                 <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                    <img src="img/3.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                    <img src="img/2.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
                 </div>
 
                 <!-- Item 5 -->
                 <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                    <img src="img/4.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                    <img src="img/1.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
                 </div>
 
             </div>
@@ -129,7 +129,7 @@ $text = $result->fetch_assoc();
                 <article class="flex max-w-xl flex-col items-start justify-between">
                     <div class="group relative">
 
-                        <img src="img/banner.jpg"  class="mb-5 rounded-lg">
+                        <img src="img/7.jpg"  class="mb-5 rounded-lg">
 
                         <h3 class="mt-3 text-center text-2xl leading-6 text-orange-500">
                             Our Philosophy
@@ -148,7 +148,7 @@ $text = $result->fetch_assoc();
                 <article class="flex max-w-xl flex-col items-start justify-between">
                     <div class="group relative">
 
-                        <img src="img/banner5.jpg"  class="mb-5 rounded-lg">
+                        <img src="img/9.jpg"  class="mb-5 rounded-lg">
 
                         <h3 class="mt-3 text-center text-2xl leading-6 text-orange-500">
                             Our Program
@@ -167,7 +167,7 @@ $text = $result->fetch_assoc();
                 <article class="flex max-w-xl flex-col items-start justify-between">
                     <div class="group relative">
 
-                        <img src="img/banner4.jpg"  class="mb-5 rounded-lg">
+                        <img src="img/13.jpg"  class="mb-5 rounded-lg">
 
                         <h3 class="mt-3 text-center text-2xl leading-6 text-orange-500">
                             Our Promise
@@ -190,6 +190,10 @@ $text = $result->fetch_assoc();
     </section>
 
     <!--------------------- Information section end --------------------->
+
+    <script>
+
+    </script>
 
     <?php include('footer.php'); ?>
 
