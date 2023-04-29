@@ -22,6 +22,7 @@
                     <h3 class="text-xl font-bold">Contact Us</h3>
                     <p class="text-slate-400">Phone: (845) 257-3000</p>
                     <p class="text-slate-400">Address: 1 Hawk Drive, New Paltz, NY 12561</p>
+                    <p class="text-slate-400">Email: childrenscenter@newpaltz.edu</p> 
                 </div>
             </div>
             

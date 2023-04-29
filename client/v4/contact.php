@@ -10,13 +10,13 @@
     <link rel="stylesheet" href="css/main.css">
 </head>
 
-<body class="bg-slate-900">
+<body>
 
 <?php include('header.php'); ?>
 
   <div class="h-screen flex flex-col items-center justify-center">
 
-    <h1 class="text-sky-100 text-5xl my-5 py-5">Contact Us!</h1>
+    <h1 class="text-gray-900 text-5xl my-5 py-5">Contact Us!</h1>
 
     <form method="post" action="email/process-email.php" class="w-full max-w-lg">
 
@@ -24,13 +24,13 @@
 
         <div class="w-full px-3 mb-6 md:mb-0 transition ease-in-out hover:scale-110">
 
-            <label class="block uppercase tracking-wide text-blue-300 text-xl font-bold mb-2"
+            <label class="block uppercase tracking-wide text-orange-500 text-xl font-bold mb-2"
                 for="grid-name">
                 Your name
             </label>
 
             <input
-                class="appearance-none block w-full bg-slate-800 text-white text-lg rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-slate-600 focus:placeholder:opacity-0"
+                class="appearance-none block w-full bg-gray-300 text-white text-lg rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-slate-600 focus:placeholder:opacity-0"
                 id="grid-name"
                 name="name"
                 type="text"
@@ -45,12 +45,12 @@
 
           <div class="w-full px-3 transition ease-in-out hover:scale-110">
 
-              <label class="block uppercase tracking-wide text-red-300 text-xl font-bold mb-2" for="grid-email">
+              <label class="block uppercase tracking-wide text-orange-500 text-xl font-bold mb-2" for="grid-email">
                   Your email
               </label>
 
               <input
-                  class="appearance-none block w-full bg-slate-800 text-white text-lg border border-slate-800 rounded py-3 px-4 mb-3 leading-tight focus:bg-slate-600 focus:outline-none focus:placeholder:opacity-0"
+                  class="appearance-none block w-full bg-gray-300 text-gray-500 text-lg rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:placeholder:opacity-0"
                   id="grid-email"
                   name="email"
                   type="email"
@@ -67,13 +67,13 @@
 
         <div class="w-full px-3 mb-6 md:mb-0 transition ease-in-out hover:scale-110">
 
-            <label class="block uppercase tracking-wide text-green-300 text-xl font-bold mb-2"
+            <label class="block uppercase tracking-wide text-orange-500 text-xl font-bold mb-2"
                 for="grid-subject">
                 Subject
             </label>
 
             <input
-                class="appearance-none block w-full bg-slate-800 text-white text-lg rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-slate-600 focus:placeholder:opacity-0"
+                class="appearance-none block w-full bg-gray-300 text-gray-500 text-lg rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-slate-600 focus:placeholder:opacity-0"
                 id="grid-subject"
                 name="subject"
                 type="text"
@@ -90,13 +90,13 @@
 
         <div class="w-full px-3 mb-6 md:mb-0 transition ease-in-out hover:scale-110">
 
-            <label class="block uppercase tracking-wide text-yellow-200 text-lg font-bold mb-2"
+            <label class="block uppercase tracking-wide text-orange-500 text-lg font-bold mb-2"
                 for="grid-message">
                 Your message
             </label>
 
             <textarea
-                class="appearance-none block w-full bg-slate-800 text-white text-lg rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-slate-600 focus:placeholder:opacity-0"
+                class="appearance-none block w-full bg-gray-300 text-gray-00 text-lg rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-slate-600 focus:placeholder:opacity-0"
                 id="grid-message"
                 name="message"
                 type="text"

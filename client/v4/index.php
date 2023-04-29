@@ -31,47 +31,47 @@ $text = $result->fetch_assoc();
     <!--------------------- Banner carousel start  --------------------->
     <section id="banner-carousel">
 
-        <div id="controls-carousel" class="w-full bg-cover bg-center" style="height:30rem;" data-carousel="slide"> 
+        <div id="controls-carousel" class="w-full bg-cover bg-center" style="height:35rem;" data-carousel="slide"> 
             <!-- Carousel wrapper -->
             
-            <div class="relative h-20 overflow-hidden rounded-lg md:h-96" style="height:30rem">
+            <div class="relative h-20 overflow-hidden rounded-lg md:h-96" style="height:35rem">
 
             <!-- Text Items -->
                 <div class="absolute top-0 left-0 z-50 flex items-center justify-center h-full w-full">
                     <div class="text-center">
-                        <h1 class="mb-3 text-white text-3xl font-['Arial'] sm:text-5xl font-extrabold uppercase drop-shadow-md">
+                        <h1 class="mb-3 text-white text-4xl font-['Arial'] sm:text-3xl font-extrabold uppercase drop-shadow-md">
                             Welcome to the <span class="text-orange-400">SUNY New Paltz</span> Children's Center!
                         </h1>
 
-                        <h2 class="text-white text-2xl sm:text-4xl">
-                            Serving the New Paltz community since 1998
+                        <h2 class="text-white text-3xl sm:text-2xl">
+                            Serving SUNY New Paltz and the New Paltz community
                         </h2>
                     </div>
                 </div>
 
                 <!-- Item 1 -->
                 <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                    <img src="img/banner.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                    <img src="img/6.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
                 </div>
 
                 <!-- Item 2 -->
                 <div class="hidden duration-700 ease-in-out" data-carousel-item="active">
-                    <img src="img/banner2.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                    <img src="img/1.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
                 </div>
 
                 <!-- Item 3 -->
                 <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                    <img src="img/banner3.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                    <img src="img/2.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
                 </div>
 
                 <!-- Item 4 -->
                 <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                    <img src="img/banner4.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                    <img src="img/3.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
                 </div>
 
                 <!-- Item 5 -->
                 <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                    <img src="img/banner5.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                    <img src="img/4.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
                 </div>
 
             </div>
@@ -104,12 +104,12 @@ $text = $result->fetch_assoc();
     <!--------------------- Information section start --------------------->
 
     <section id="information">
-        <div class="py-24 sm:py-32">
+        <div class="py-24 sm:py-14">
 
             <div class="mx-auto max-w-7xl px-6 lg:px-8">
                 <div class="mx-auto w-3/4 items-center">
-                    <h2 class="text-3xl text-center font-bold tracking-tight text-gray-900 uppercase sm:text-4xl">
-                        Our Program and Philosophy
+                    <h2 class="text-3xl text-center font-bold tracking-tight text-gray-900 sm:text-4xl">
+                        About Our Program
                     </h2>
                     <p class="mt-2 text-lg text-center leading-8 text-gray-600">
                         Our primary concern is the social and emotional development of each child.

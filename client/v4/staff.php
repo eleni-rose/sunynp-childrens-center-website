@@ -97,6 +97,9 @@ $text19 = $result19->fetch_assoc();
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
+
+<?php include('header.php'); ?>
+
  <!-- Container for demo purpose -->
 <div class="container my-24 px-6 mx-auto">
 
@@ -209,5 +212,7 @@ $text19 = $result19->fetch_assoc();
   
   </div>
   <!-- Container for demo purpose -->
+
+  <?php include('footer.php'); ?>
 </body>
 </html>

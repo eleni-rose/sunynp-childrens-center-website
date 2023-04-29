@@ -14,7 +14,7 @@
       
 <!--------------------- Navbar --------------------->
 
-    <nav class="container mx-auto p-8 bg-white shadow bg-opacity-50" id="main-nav">
+    <nav class="px-5 py-5 my-5 bg-white drop-shadow-sm" id="main-nav">
         <div class="flex place-content-center">
 
         <!--------------------- Navigation items --------------------->
@@ -47,7 +47,7 @@
                     </span>
                 </a>
 
-                <a href="our-staff.php" class="my-1 group transition duration-500">
+                <a href="staff.php" class="my-1 group transition duration-500">
                     Our Teachers
                     <span
                         class="
@@ -74,7 +74,7 @@
                 </a>
 
                 <a href="handbook.php" class="my-1 group transition duration-500">
-                    Handbook
+                    Parent Resources
                     <span
                         class="
                             block max-w-0

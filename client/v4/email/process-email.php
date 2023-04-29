@@ -30,7 +30,7 @@ try {
     $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
     $mail->Port = 587;
     $mail->Username = "newpaltzccsmtp@gmail.com";
-    $mail->Password = "anuulpqffcoshufh";
+    $mail->Password = "bxaqnfjjmsaxlhyq";
 
     // SMTP recipients
     $mail->setFrom('contact@example.net', $name);
@@ -46,7 +46,7 @@ try {
         die("Links are not allowed in the message box!");
     } else {
         $mail->send();
-        header("Location: ../contact-success.php");
+        header("Location: ../contact-success.html");
     }
 
 } catch (Exception $e) {
