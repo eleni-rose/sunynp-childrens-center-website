@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,8 +13,6 @@
 </head>
 
 <body class='bg-slate-900'>
-
-<?php include('header-admin.php'); ?>
 
 <div class="h-screen flex flex-col items-center justify-center">
 

@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ['*.{html,php}'],
+  content: ['*.{html,php}', 'admin/*.{html,php}'],
   theme: {
     fontFamily: {
       'sans': ['Josefin\\ Sans', 'Helvetica', 'Arial', 'sans-serif']

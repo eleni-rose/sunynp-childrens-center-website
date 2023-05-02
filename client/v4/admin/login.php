@@ -22,7 +22,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 
             $_SESSION["admin_id"] = $admin["id"];
 
-            header("Location: dashboard.php");
+            header("Location: upload.php");
             exit;
 
         }
