@@ -1,0 +1,30 @@
+
+You must first create the "a_users" table (instructions are bellow)
+========================================================================
+
+1)Login to your CS Linux account with "putty" of ssh
+
+2)Login to your MySQL account
+
+$	mysql -h localhost -p (click enter, then type in your MySQL password which is different from the CS password)
+
+3) Open/unlock your MySQL database (must do this before doing anything else with database, YourUserName is the students NPCUID. The database name is the username followed by "_db")
+
+$	USE YourUseName_db; 
+
+4)
+
+CREATE TABLE `a_users` (
+  `uid` int(10) NOT NULL AUTO_INCREMENT,
+  `username` varchar(50) NOT NULL,
+  `password` varchar(255) NOT NULL,
+  PRIMARY KEY (`uid`),
+  UNIQUE KEY `username` (`username`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
+
+5)
+
+INSERT INTO `a_users` (`uid`, `username`, `password`) VALUES
+(1, 'user1', 'p1'),
+(2, 'user2', 'p2'),
+(3, 'user3', 'p3');

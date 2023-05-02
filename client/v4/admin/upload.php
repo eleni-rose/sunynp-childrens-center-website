@@ -43,15 +43,23 @@ if (isset($_SESSION["admin_id"])) {
                 Welcome back, <?= $admin["f_name"]?>
             </h2>
 
-            <form method ="post" action="process-upload.php" enctype="multipart/form-data">
+            <form method ="post" action="upload_process.php" enctype="multipart/form-data">
+
+                <label for="image">Gallery or Index?</label>
+
+                <input aria-label ="Where are you uploading to?"
+                        id="description"
+                        name="description"
+                        type="text"
+                        class="text-slate-400 my-5"/>
 
                 <label for="image">Image file</label>
 
-                <input aria-label="Upload image"
-                        id="image"
-                        name="image"
-                        type="file"
-                        class="text-slate-400 my-5"/>
+                    <input aria-label="Upload image"
+                            id="fileToUpload"
+                            name="fileToUpload"
+                            type="file"
+                            class="text-slate-400 my-5"/>
 
                 <div class="flex flex-col items-center justify-center">
                     <button

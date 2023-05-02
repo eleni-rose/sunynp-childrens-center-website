@@ -1,7 +1,7 @@
 <?php
 
 $mysqli = require_once('config.php');
-$filepath = dirname(__DIR__, 1);
+$filepath = "../files";
 
 $sql = "SELECT * FROM staff";
 $result = mysqli_query($mysqli, $sql);
@@ -45,7 +45,7 @@ $staff = mysqli_fetch_all($result, MYSQLI_ASSOC);
               <?= $s["name"] ?>
             </p>
 
-            <img src = <?= $s["pic"] ?>
+            <img src = <?= $filepath."/".$s['pic'] ?>
                   class="rounded-full mx-auto shadow-lg mb-4" alt="Staff Member Photo"
                   style="max-width: 100px" />
 

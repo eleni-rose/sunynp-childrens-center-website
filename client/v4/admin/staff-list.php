@@ -23,7 +23,7 @@ $staff = mysqli_fetch_all($result, MYSQLI_ASSOC);
 
 </head>
 
-<body class='bg-slate-700'>
+<body class="bg-green-500">
 
 <div class="h-screen flex flex-col items-center justify-center">
 

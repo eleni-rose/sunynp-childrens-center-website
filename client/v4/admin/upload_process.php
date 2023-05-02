@@ -1,5 +1,27 @@
 <!DOCTYPE html>
 <?php
+
+  require __DIR__ . "/config.php";
+
+  $sql = "INSERT INTO Files (description, filename)
+          VALUES (?, ?)";
+  
+  $stmt = $mysqli->stmt_init();
+  
+  if (! $stmt->prepare($sql)) {
+      die("SQL error: " . $mysqli->error);
+  }
+  
+  $stmt->bind_param("ss",
+                  $_POST["description"],
+                  $_POST["fileToUpload"]);
+  
+  if ($stmt->execute()) {
+      exit;
+  } else {
+        die($mysqli-->error . " ". $mysqli->errno);
+  
+    }
   
     $target_dir = "/var/www/projects/s23-04/html/files"."/";
     $target_file = $target_dir . basename($_FILES["fileToUpload"]["name"]);
@@ -30,6 +52,7 @@
         }
         */
         
+        /*
         function checkFile($target_dir, $name, $ext, $number, )
         {
             if (file_exists($target_dir.$name.$number.$ext)) {
@@ -41,6 +64,7 @@
 
             return $name.$ext.$number;
         }
+        */
   
         // Check file size
         if ($_FILES["fileToUpload"]["size"] > 10000000) {
@@ -57,8 +81,6 @@
         }
         else
         {
-            $filename = checkFile($target_dir, $filename, "");
-            echo $filename;
 
             // If everything is ok, try to upload file
             if (move_uploaded_file($_FILES["fileToUpload"]

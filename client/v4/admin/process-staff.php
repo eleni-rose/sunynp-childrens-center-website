@@ -2,17 +2,10 @@
 
 require __DIR__ . "/config.php";
 
-$id = 0;
+$id = $_POST["user-id"];
 $name = $_POST["staff-name"];
 $title = $_POST["job-title"];
 $bio = $_POST["biography"];
-
-if (isset($_GET['update'])) {
-    $id = isset($_POST['id']) ? $_POST['id'] : NULL;
-} else {
-    echo "No ID set!";
-    exit;
-}
 
 $sql = "UPDATE staff
         SET name = '$name', title = '$title', bio = '$bio'
@@ -25,7 +18,7 @@ if (! $stmt->prepare($sql)) {
 }
 
 if ($stmt->execute()) {
-    header("Location: update-success.html");
+    header("Location: staff-update-success.html");
     exit;
 } else {
     
