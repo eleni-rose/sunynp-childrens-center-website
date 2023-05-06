@@ -5,8 +5,7 @@ $filepath = dirname(__DIR__, 1);
 
 $sql = "SELECT * FROM staff";
 
-$result = mysqli_query($mysqli, $sql);
-$staff = mysqli_fetch_all($result, MYSQLI_ASSOC);
+$result = $mysqli->query($sql);
 
 ?>
 
@@ -23,55 +22,76 @@ $staff = mysqli_fetch_all($result, MYSQLI_ASSOC);
 
 </head>
 
-<body class="bg-green-500">
+<body class="bg-slate-900">
 
 <div class="h-screen flex flex-col items-center justify-center">
 
-    <h1 class="text-sky-100 text-5xl my-5 py-5">Staff List</h1>
+    <h1 class="text-sky-100 text-5xl my-5 py-5">Current Staff List</h1>
 
     <div class="flex flex-col">
         <div class="overflow-x-auto sm:-mx-6 lg:-mx-8">
             <div class="inline-block min-w-full py-2 sm:px-6 lg:px-8">
             <div class="overflow-hidden">
-                <table class="min-w-full text-left text-sm font-light">
 
-                <thead class="border-b font-medium">
-                    <tr>
-                        <th scope="col" class="px-6 py-4">ID</th>
-                        <th scope="col" class="px-6 py-4">Name</th>
-                        <th scope="col" class="px-6 py-4">Job Title</th>
-                        <th scope="col" class="px-6 py-4">Biography</th>
-                        <th scope="col" class="px-6 py-4">Profile Picture</th>
-                    </tr>
-                </thead>
+                <table class="min-w-full text-left text-sky-100 my-3">
 
-                <?php foreach ($staff as $s): ?>
+                    <thead class="border-b">
+                        <tr class="text-xl">
+                            <th scope="col" class="px-6 py-4 font-normal">ID</th>
+                            <th scope="col" class="px-6 py-4 font-normal">Name</th>
+                            <th scope="col" class="px-6 py-4 font-normal">Job Title</th>
+                            <th scope="col" class="px-6 py-4 font-normal">Biography</th>
+                            <th scope="col" class="px-6 py-4 font-normal">Profile Picture</th>
+                        </tr>
+                    </thead>
+
+                    <?php if ($result->num_rows > 0) {
+
+                        while ($row = $result->fetch_assoc()) {
+
+                    ?>
 
                     <tbody>
-                        <tr class="border-b">
-                            <td class="whitespace-nowrap px-6 py-4 font-medium"><?= $s["id"] ?></td>
-                            <td class="whitespace-nowrap px-6 py-4 font-medium"><?= $s["name"] ?></td>
-                            <td class="whitespace-nowrap px-6 py-4"><?= $s["title"] ?></td>
-                            <td class="whitespace-nowrap px-6 py-4"><?= $s["bio"] ?></td>
-                            <td class="whitespace-nowrap px-6 py-4"><?= $s["pic"] ?></td>
+
+                        <tr class="border-b font-light">
+                            <td class="whitespace-nowrap px-6 py-4"><?= $row["id"] ?></td>
+                            <td class="whitespace-nowrap px-6 py-4"><?= $row["name"] ?></td>
+                            <td class="whitespace-nowrap px-6 py-4"><?= $row["title"] ?></td>
+                            <td class="whitespace-nowrap px-6 py-4"><?= $row["bio"] ?></td>
+                            <td class="whitespace-nowrap px-6 py-4"><?= $row["pic"] ?></td>
 
                             <td class="whitespace-nowrap px-6 py-4">
-                                <a href="update-staff.php?update=<?php echo $s["id"]; ?>">Update</a></td>
-                            </td>
+                                <div class="inline-flex">
+                                    <a class="bg-gray-400 hover:bg-sky-500 text-gray-800 hover:text-white duration-150 py-2 px-4 text-lg rounded-l"
+                                        href="staff-update.php?id=<?php echo $row['id']; ?>">
+                                        Update
+                                    </a>
 
-                            <td class="whitespace-nowrap px-6 py-4">
-                                Delete
+                                    <a class="bg-gray-300 hover:bg-red-500 text-gray-800 hover:text-white duration-150 py-2 px-4 text-lg rounded-r"
+                                        href="staff-delete.php?id=<?php echo $row['id']; ?>">
+                                        Delete
+                                    </a>
+                                </div>
                             </td>
                         </tr>
+
+                        <?php  }
+                            }
+                        ?>
+
                     </tbody>
-
-                <?php endforeach ?>
-
                 </table>
             </div>
             </div>
         </div>
     </div>
+
+    <a href="staff-create.php"
+       class="text-sky-400 text-lg text-center py-1.5 my-3 w-1/5 bg-transparent border-2 border-sky-300
+                rounded-full transition ease-in-out hover:scale-110 hover:bg-sky-400 hover:border-sky-400
+                hover:text-white active:bg-sky-300">
+        Add new staff member
+    </a>
 
 </body>
 </html>

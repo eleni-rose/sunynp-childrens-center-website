@@ -35,25 +35,25 @@ $staff = mysqli_fetch_all($result, MYSQLI_ASSOC);
 
       <h2 class="text-3xl font-bold mb-12">Meet Our Staff!</h2>
 
-      <div class="grid md:grid-cols-3 xl:grid-cols-3 gap-x-6 lg:gap-xl-12">
+      <div class="grid grid-cols-3 gap-6 md:gap-2 sm:gap-2">
 
         <?php foreach ($staff as $s): ?>
 
           <div class="mb-12">
 
-            <p class="font-bold mb-2">
-              <?= $s["name"] ?>
-            </p>
-
             <img src = <?= $filepath."/".$s['pic'] ?>
-                  class="rounded-full mx-auto shadow-lg mb-4" alt="Staff Member Photo"
-                  style="max-width: 100px" />
+                  class="rounded-md mx-auto shadow-lg mb-5" alt="Staff Member Photo"
+                  style="max-width: 10rem" />
 
-            <p class="text-gray-500">
+            <h1 class="font-bold text-xl text-blue-900">
+              <?= $s["name"] ?>
+            </h1>
+
+            <h2 class="text-slate-700 text-lg">
               <?= $s["title"] ?>
-            </p>
+            </h2>
 
-            <p class="text-gray-500">
+            <p class="text-slate-500">
               <?= $s["bio"] ?>
             </p>
 

@@ -52,7 +52,7 @@ $stmt->bind_param("ssss",
 
 if ($stmt->execute()) {
 
-    header("Location: ../../admin/signup-success.php");
+    header("Location: success-signup.php");
     exit;
 
 } else {

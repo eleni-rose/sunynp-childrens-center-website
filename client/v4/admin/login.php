@@ -112,7 +112,9 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 
             <div class="flex flex-col items-center justify-center">
                 <button
-                    class="text-sky-400 text-lg py-1.5 my-3 w-1/2 bg-transparent border-2 border-sky-300 rounded-full transition ease-in-out hover:scale-110 hover:bg-sky-400 hover:text-white active:bg-sky-300">
+                    class="text-sky-400 text-lg py-1.5 my-3 w-1/2 bg-transparent border-2 border-sky-300
+                    rounded-full transition ease-in-out hover:scale-110 hover:bg-sky-400 hover:text-white
+                    active:bg-sky-300 hover:border-sky-400">
                     Log in
                 </button>
             </div>

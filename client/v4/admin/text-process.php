@@ -2,13 +2,12 @@
 
 require __DIR__ . "/config.php";
 
-$id = $_POST["user-id"];
-$name = $_POST["staff-name"];
-$title = $_POST["job-title"];
-$bio = $_POST["biography"];
+$id = $_POST["id"];
+$content = $_POST["content"];
+$info = $_POST["info"];
 
-$sql = "UPDATE staff
-        SET name = '$name', title = '$title', bio = '$bio'
+$sql = "UPDATE text 
+        SET content = '$content', info = '$info'
         WHERE id='$id'";
 
 $stmt = $mysqli->stmt_init();
@@ -18,7 +17,7 @@ if (! $stmt->prepare($sql)) {
 }
 
 if ($stmt->execute()) {
-    header("Location: staff-update-success.html");
+    header("Location: success-text.html");
     exit;
 } else {
     

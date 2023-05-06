@@ -43,7 +43,7 @@ if (isset($_SESSION["admin_id"])) {
                 Welcome back, <?= $admin["f_name"]?>
             </h2>
 
-            <form method ="post" action="upload_process.php" enctype="multipart/form-data">
+            <form method ="post" action="process-upload.php" enctype="multipart/form-data">
 
                 <label for="image">Gallery or Index?</label>
 
@@ -64,7 +64,7 @@ if (isset($_SESSION["admin_id"])) {
                 <div class="flex flex-col items-center justify-center">
                     <button
                         class="text-sky-400 text-lg py-1.5 my-3 w-full bg-transparent border-2 border-sky-300
-                                rounded-full transition ease-in-out hover:scale-110 hover:bg-sky-400
+                                rounded-full transition ease-in-out hover:scale-110 hover:bg-sky-400 hover:border-sky-400
                                 hover:text-white active:bg-sky-300">
                         Upload
                     </button>
