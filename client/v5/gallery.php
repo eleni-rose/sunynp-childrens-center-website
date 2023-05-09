@@ -31,7 +31,7 @@ $img = mysqli_fetch_all($result, MYSQLI_ASSOC);
 
 <?php include('header.php'); ?>
 
-  <div class="container mx-auto px-5 py-2 lg:px-32 lg:pt-12">
+  <div class="container mx-auto px-10 py-10 sm:my-32 lg:px-32 lg:pt-12">
 
     <div class="-m-1 flex flex-wrap md:-m-2">
 
@@ -42,7 +42,7 @@ $img = mysqli_fetch_all($result, MYSQLI_ASSOC);
           <img
             src = <?= $filepath."/".$i['filename'] ?>
             alt = "Gallery Image"
-            class="block h-full w-full rounded-lg object-cover object-center">
+            class="block h-full w-full rounded-lg object-cover object-center transition ease-in-out hover:scale-125">
         </div>
       </div>
 
@@ -51,6 +51,8 @@ $img = mysqli_fetch_all($result, MYSQLI_ASSOC);
     </div>
 
   </div>
-    
+
+<?php include('footer.php'); ?>
+
 </body>
 </html>

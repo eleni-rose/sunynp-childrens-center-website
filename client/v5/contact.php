@@ -125,5 +125,8 @@
 
     <p class="my-3 text-slate-400 text-md">Don't need to send a message? <a href="index.php" class="text-blue-500 hover:underline hover:text-blue-600">Head back home.</a></p>
   </div>
+
+  <?php include('footer.php'); ?>
+
 </body>
 </html>

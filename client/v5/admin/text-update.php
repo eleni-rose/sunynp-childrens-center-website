@@ -11,7 +11,7 @@ if (isset($_GET['id'])) {
     if ($result->num_rows > 0) {
 
         while ($row = $result->fetch_assoc()) {
-            $description = $row['info'];
+            $info = $row['info'];
             $content = $row['content'];
         }
     }
@@ -44,7 +44,7 @@ if (isset($_GET['id'])) {
 
 <div class="h-screen flex flex-col items-center justify-center">
 
-    <h1 class="text-sky-100 text-5xl my-5 py-5">Update <?php echo $description ?> </h1>
+    <h1 class="text-sky-100 text-5xl my-5 py-5">Update <?php echo $info ?> </h1>
 
         <form method="post" action="text-update-process.php" class="w-full max-w-lg">
 
@@ -52,7 +52,7 @@ if (isset($_GET['id'])) {
 
                 <input type="hidden" name="tid" value="<?php echo $tid; ?>">
 
-                <input type="hidden" name="info" value="<?php echo $tid; ?>">
+                <input type="hidden" name="info" value="<?php echo $info; ?>">
 
                 <div class="w-full px-3 mb-6 md:mb-0 transition ease-in-out hover:scale-110">
                     <label class="block tracking-wide text-blue-300 text-xl mb-2"

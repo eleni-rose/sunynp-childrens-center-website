@@ -52,7 +52,8 @@ $info3 = $result9->fetch_assoc();
 $sql10 = "SELECT * FROM slideshow";
 $result10 = mysqli_query($mysqli, $sql10);
 
-$img = mysqli_fetch_all($result10, MYSQLI_ASSOC);
+$img = mysqli_fetch_all($result, MYSQLI_ASSOC);
+
 
 ?>
 
@@ -97,13 +98,9 @@ $img = mysqli_fetch_all($result10, MYSQLI_ASSOC);
 
                 <!-- Slideshow Images  -->
 
-                <?php foreach ($img as $i): ?>
-
-                    <div class="hidden duration-700 transition ease-in-out" data-carousel-item>
-                        <img src = <?= $filepath."/".$i['filename'] ?> class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
-                    </div>
-
-                <?php endforeach ?>
+                <div class="hidden duration-700 transition ease-in-out" data-carousel-item>
+                    <img src = <?= $filepath."/".$i['filename'] ?> class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                </div>
 
             </div>                    
         </div>

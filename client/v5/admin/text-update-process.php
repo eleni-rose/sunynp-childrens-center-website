@@ -10,7 +10,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST')
 
     $sql = "UPDATE text
             SET info = '$info', content = '$content'
-            WHERE id='$tid'";
+            WHERE id='$id'";
 
     $stmt = $mysqli->stmt_init();
 

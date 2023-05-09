@@ -21,23 +21,22 @@
 
                 <div class="flex flex-col space-y-2">
                     <h3 class="text-xl text-gray-600 font-bold">Contact Us</h3>
-                    <p class="text-slate-400">Phone: (845) 257-2910</p>
+                    <p class="text-slate-400">Phone: <span class="text-blue-700"(845) 257-2910</p>
                     <p class="text-slate-400">Address: 1 Hawk Drive, New Paltz, NY 12561</p>
                     <p class="text-slate-400">Email: childrenscenter@newpaltz.edu</p>
                 </div>
 
                 <div class="flex flex-col space-y-2">
                     <h3 class="text-xl text-gray-600 font-bold">Useful Links</h3>
-                    <a href="faq.php" class="text-slate-400 hover:text-blue-700 duration-200">Frequently Asked Questions</a>
+                    <a href="handbook.php" class="text-slate-400 hover:text-blue-700 duration-200">Handbook 2023</a>
                     <a href="about.php" class="text-slate-400 hover:text-blue-700 duration-200">About Our Program</a>
-                    <a href="faq.php" class="text-slate-400 hover:text-blue-700 duration-200">Pre-regristation Form</a>
-                    <a href="faq.php" class="text-slate-400 hover:text-blue-700 duration-200">Waitlist</a>
-                    <a href="faq.php" class="text-slate-400 hover:text-blue-700 duration-200">Administrator Dashboard</a>
+                    <a href="waitlist.php" class="text-slate-400 hover:text-blue-700 duration-200">Waitlist Form</a>
+                    <a href="admin/login.php" class="text-slate-400 hover:text-blue-700 duration-200">Administrator Dashboard</a>
                 </div>
 
                 <div class="flex flex-col space-y-2">
                     <h3 class="text-xl text-gray-600 font-bold">Hours of Operation</h3>
-                    <p class="text-slate-400">Monday - Friday | 7:30am - 5pm</p>
+                    <p class="text-slate-400">Monday to Friday | 7:30am - 5pm</p>
                 </div>
 
             </div>

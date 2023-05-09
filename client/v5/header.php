@@ -82,19 +82,6 @@
                             transition-all
                             duration-500
                             h-0.5
-                            bg-blue-700">
-                    </span>
-                </a>
-
-                <a href="admin/login.php" class="my-1 group transition duration-500">
-                    Admin
-                    <span
-                        class="
-                            block max-w-0
-                            group-hover:max-w-full
-                            transition-all
-                            duration-500
-                            h-0.5
                             bg-orange-500">
                     </span>
                 </a>
@@ -104,29 +91,22 @@
                     <ul class="py-2 text-lg text-gray-700" aria-labelledby="dropdownDefaultButton">
                         <li>
                             <a href="about.php"
-                            class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
+                            class="block px-4 py-2 hover:bg-blue-700 hover:text-white transition duration-175">
                                 Program Info
                             </a>
                         </li>
 
                         <li>
                             <a href="handbook.php"
-                            class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
+                            class="block px-4 py-2 hover:bg-orange-500 hover:text-white transition duration-175">
                                 Parent Handbook
                             </a>
                         </li>
 
                         <li>
-                            <a href="faq.php"
-                            class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
-                                FAQ
-                            </a>
-                        </li>
-
-                        <li>
                             <a href="waitlist.php"
-                            class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
-                                Waitlist
+                            class="block px-4 py-2 hover:bg-blue-700 hover:text-white transition duration-175">
+                                Waitlist Form
                             </a>
                         </li>
                     </ul>
