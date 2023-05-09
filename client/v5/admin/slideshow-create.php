@@ -22,13 +22,13 @@
 
             <form method ="post" action="slideshow-create-process.php" enctype="multipart/form-data">
 
-                <label for="image">Image file</label>
+                <label for="image" class="text-2xl text-slate-400">Image file</label>
 
                     <input aria-label="Upload image"
                             id="fileToUpload"
                             name="fileToUpload"
                             type="file"
-                            class="text-slate-400 my-5"/>
+                            class="text-sky-400 text-2xl my-10"/>
 
                 <div class="flex flex-col items-center justify-center">
                     <button
