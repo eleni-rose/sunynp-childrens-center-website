@@ -34,9 +34,10 @@ $staff = mysqli_fetch_all($result, MYSQLI_ASSOC);
 
     <section class="mb-32 text-gray-800 text-center">
 
-      <h2 class="text-3xl font-bold mb-12">Meet Our Staff!</h2>
+    <h1 class="text-3xl sm:text-4xl font-title font-bold bg-clip-text text-transparent bg-gradient-to-br
+        pb-4 mb-5 md:pb-6 from-blue-500 to-violet-700">Meet Our Staff</h1>
 
-      <div class="grid grid-cols-2 gap-0 md:grid-cols-4">
+      <div class="grid grid-cols-2 gap-0 md:grid-cols-3">
 
         <?php foreach ($staff as $s): ?>
 
@@ -46,7 +47,7 @@ $staff = mysqli_fetch_all($result, MYSQLI_ASSOC);
                   class="rounded-md mx-auto shadow-lg mb-5 transition ease-in-out hover:scale-110" alt="Staff Member Photo"
                   style="max-width: 10rem" />
 
-            <h1 class="font-bold text-xl text-blue-900">
+            <h1 class="text-xl text-blue-900">
               <?= $s["name"] ?>
             </h1>
 

@@ -3,7 +3,8 @@ module.exports = {
   content: ['*.{html,php}', 'admin/*.{html,php}'],
   theme: {
     fontFamily: {
-      'sans': ['Josefin\\ Sans', 'Helvetica', 'Arial', 'sans-serif']
+      'sans': ['"Josefin Sans"', 'Helvetica', 'Arial', 'sans-serif'],
+      'title': ['"Fira Sans"', '"Josefin_Sans"', 'Helvetica', 'Arial']
     },
     screens: {
       sm: '480px',

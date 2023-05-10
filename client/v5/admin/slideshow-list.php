@@ -32,7 +32,7 @@ $result = $mysqli->query($sql);
     <h1 class="text-sky-100 text-5xl">Current Slideshow Images</h1>
 
     <div class="my-5 py-5 flex flex-col">
-        <div class="overflow-x-auto sm:-mx-6 lg:-mx-8">
+        <div class="relative overflow-x-auto sm:-mx-6 lg:-mx-8"> 
             <div class="inline-block min-w-full py-2 sm:px-6 lg:px-8">
             <div class="overflow-hidden">
 

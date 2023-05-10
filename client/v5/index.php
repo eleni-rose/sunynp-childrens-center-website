@@ -65,7 +65,9 @@ $img = mysqli_fetch_all($result10, MYSQLI_ASSOC);
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SUNY New Paltz Children's Center</title>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;500;800&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Odibee+Sans&display=swap" rel="stylesheet">
+    
     <link rel="stylesheet" href="css/main.css">
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
@@ -81,11 +83,11 @@ $img = mysqli_fetch_all($result10, MYSQLI_ASSOC);
             <!-- Carousel wrapper -->
             
             <div class="relative h-20 overflow-hidden rounded-lg md:h-96" style="height:35rem">
-
             <!-- Text Items -->
                 <div class="absolute top-0 left-0 z-50 flex items-center justify-center h-full w-full">
                     <div class="text-center">
-                        <h1 class="mb-3 text-white text-4xl font-['Arial'] sm:text-4xl font-extrabold uppercase drop-shadow-md">
+                        <h1 class="text-4xl sm:text-6xl font-title font-bold bg-clip-text text-transparent
+                            bg-gradient-to-br from-red-300 to-orange-500">
                             <?= $title["content"] ?>
                         </h1>
 
@@ -122,7 +124,7 @@ $img = mysqli_fetch_all($result10, MYSQLI_ASSOC);
 
         <div class="mx-auto max-w-7xl px-6 lg:px-8">
             <div class="mx-auto w-3/4 items-center">
-                <h2 class="text-3xl text-center font-bold tracking-tight text-gray-900 sm:text-4xl">
+                <h2 class="text-3xl text-center tracking-tight text-blue-700 font-title sm:text-4xl">
                     About Our Program
                 </h2>
                 <p class="mt-2 text-lg text-center leading-8 text-gray-600">
@@ -137,7 +139,7 @@ $img = mysqli_fetch_all($result10, MYSQLI_ASSOC);
 
                         <img src="img/7.jpg"  class="mb-5 rounded-lg">
 
-                        <h3 class="mt-3 text-center text-2xl leading-6 text-orange-500">
+                        <h3 class="mt-3 text-center text-2xl font-title leading-6 text-orange-500">
                             <?= $info_title1["content"] ?>
                         </h3>
                         
@@ -152,7 +154,7 @@ $img = mysqli_fetch_all($result10, MYSQLI_ASSOC);
 
                         <img src="img/9.jpg"  class="mb-5 rounded-lg">
 
-                        <h3 class="mt-3 text-center text-2xl leading-6 text-orange-500">
+                        <h3 class="mt-3 text-center text-2xl font-title leading-6 text-orange-500">
                             <?= $info_title2["content"] ?>
                         </h3>
                         
@@ -167,7 +169,7 @@ $img = mysqli_fetch_all($result10, MYSQLI_ASSOC);
 
                         <img src="img/13.jpg"  class="mb-5 rounded-lg">
 
-                        <h3 class="mt-3 text-center text-2xl leading-6 text-orange-500">
+                        <h3 class="mt-3 text-center text-2xl font-title leading-6 text-orange-500">
                             <?= $info_title3["content"] ?>
                         </h3>
                         

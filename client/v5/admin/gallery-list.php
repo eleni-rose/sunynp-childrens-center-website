@@ -27,9 +27,12 @@ $result = $mysqli->query($sql);
 
 <?php include('dashboard.php'); ?>
 
-<div class="h-screen flex flex-col items-center justify-center">
+<div class="flex flex-col items-center justify-center h-screen">
 
-    <h1 class="text-sky-100 text-5xl">Current Gallery Images</h1>
+    <h1 class="mx-auto flex text-3xl sm:text-4xl font-title
+        bg-clip-text text-transparent bg-gradient-to-br from-sky-200 to-sky-400">
+        Current Gallery Images
+    </h1>
 
     <div class="my-5 py-5 flex flex-col">
         <div class="overflow-x-auto sm:-mx-6 lg:-mx-8">
@@ -39,7 +42,7 @@ $result = $mysqli->query($sql);
                 <table class="min-w-full text-left text-sky-100 my-3">
 
                     <thead class="border-b-5">
-                        <tr class="text-xl">
+                        <tr class="text-xl grid-cols-2">
                             <th scope="col" class="px-6 py-4 font-normal">ID</th>
                             <th scope="col" class="px-6 py-4 font-normal">Description</th>
                             <th scope="col" class="px-6 py-4 font-normal">Image</th>
