@@ -14,15 +14,14 @@
   <?php include('header.php'); ?>
 
     <div class="p-4 md:p-6 lg:p-8 min-h-screen grid gap-4 md:gap-6 lg:gap-8">
-
       <div class="text-center grid p-4 place-items-center">
-        
-        <h1 class="text-3xl sm:text-5xl font-bold bg-clip-text text-transparent
-          bg-gradient-to-br pb-4 md:pb-6 from-blue-500 to-violet-700">
-          Calendar
-        </h1>
-
-
+        <div class="container mx-auto px-5 py-10 my-10 lg:px-32 lg:pt-12">
+          <div class="-m-1 flex flex-wrap md:-m-2">
+            <iframe src="https://outlook.live.com/owa/calendar/00000000-0000-0000-0000-000000000000/9701c7d1-2a6f-4142-ad38-4bdd83dcb181/cid-C4396CD8BA25E746/index.html" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
 
   <?php include('footer.php'); ?>
 
