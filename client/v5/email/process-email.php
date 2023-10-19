@@ -29,13 +29,13 @@ try {
     $mail->Host = "smtp.gmail.com";
     $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
     $mail->Port = 587;
-    $mail->Username = "newpaltzccsmtp@gmail.com";
-    $mail->Password = "bxaqnfjjmsaxlhyq";
+    $mail->Username = "secret";
+    $mail->Password = "secret";
 
     // SMTP recipients
     $mail->setFrom('contact@example.net', $name);
     $mail->addReplyTo($email, $name);
-    $mail->addAddress("newpaltzccsmtp@gmail.com");
+    $mail->addAddress("secret");
 
     // Email content
     $mail->Subject = $subject;
